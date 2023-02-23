@@ -1,0 +1,12 @@
+<div>
+    <h1>Nombre de la persona:{{nombre}}</h1>
+    <p>color favorito: {{color}}</p>
+    <p class="text-success">edad de la persona {{edad}}</p>
+    <div *ngIf="edad>18">
+        <h3>La persona es mayor de edad</h3>
+        <p>La persona puede tomar guaro</p>
+    </div>
+    <h3 *ngIf="edad<19">Es menor de edad</h3>
+    <button (click)="incrementarEdad()" >Incrementar Edad</button>
+    <button (click)="disminuirEdad()">Disminuir Edad</button>
+</div>
